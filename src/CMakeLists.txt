@@ -2,9 +2,9 @@ add_library(example)
 
 target_sources(example
   PRIVATE
-    example.cpp
+        MathCalculator.cpp
   PUBLIC
-    example.h
+        MathCalculator.h
   )
 
 target_include_directories(example

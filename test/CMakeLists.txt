@@ -11,8 +11,7 @@ FetchContent_MakeAvailable(gtest)
 add_executable(
     unit_tests
     example_add.cpp
-    example_subtract.cpp
-    )
+)
 
 target_link_libraries(unit_tests
   PRIVATE

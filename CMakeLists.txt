@@ -6,7 +6,8 @@ project(gtest-demo LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
-
+add_executable(gtest-demo main.cpp)
+include_directories(lib/googletest/include)
 # place binaries and libraries according to GNU standards
 include(GNUInstallDirs)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
@@ -24,3 +25,4 @@ add_subdirectory(src)
 enable_testing()
 
 add_subdirectory(test)
+target_link_libraries(gtest-demo  PUBLIC gtest)

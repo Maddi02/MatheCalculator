@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/martinhummel/git/gtest-demo/src/MathCalculator.cpp
+MathCalculator.h
+/Users/martinhummel/git/gtest-demo/src/MathCalculator.h
+iostream
+-
+cmath
+-
+
+/Users/martinhummel/git/gtest-demo/src/MathCalculator.h
+
